@@ -72,10 +72,13 @@ ax0.set_title('Magnetic field in a square loop - current 1A')
 ax0.set_xlabel("x coordinates [cm]")
 ax0.set_ylabel("y coordinates [cm]")
 
+plt.savefig("images/B.png")
+
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.plot_surface(x, y, np.log10(np.abs(B)), cmap=plt.cm.viridis)
+plt.savefig("images/B-3d.png")
 
 # fig, (ax0, ax1) = plt.subplots(ncols=2)
 #
